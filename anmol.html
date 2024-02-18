@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Anmol Gupta </title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+
+    }
+    .main{
+        width: 350px;
+        background-color: aliceblue;
+        box-shadow: 0px 5px 10px gray;
+        border-radius: 20px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    
+    
+    .img{
+        position:relative;
+        height: 150px;
+        width: 150px;
+        
+        padding:3px;
+        
+    }
+    .text{
+        text-align: center;
+       
+    }
+    .filg{
+        margin-left: 8px;
+    }
+    .button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="img">
+            <img style="border-radius: 50%; border:2px solid skyblue; box-shadow: 3px 3px 3px gray;" src="\AnmolDemo.jpg" height="150px" width="150px"> 
+            </div>
+        <div class="text">
+            <h1 style="text-shadow: 2px 2px 2px gray;">Anmol Gupta</h1>
+            <h3>it'x_me_anmolgupta</h3>
+        </div>
+        <div class="filg">
+            <a href="https://anmolgupta32068@gmail.com"><img src="data:image/png;base64,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" width="50px" height="50px"></a>
+          <a href="https://www.instagram.com/itx_me_anmolgupta?igsh=a21scWJ4YzU3Mnd2">  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTdE21hRnfQEwDwtNBQlka6KvtMTXtvDErTA&usqp=CAU" width="60px" height="50px">
+          <a href="https://www.linkedin.com/in/anmol-gupta-575459291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">  <img  style="border-radius: 15px; margin-right: 5px;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUKZsL///8AZME7eMgAWb7i6fUAXL/Az+oAYsFjj9B1m9QAYMBGgswAVr0AXb8AWr5ZjdBWh80ZbMTO3PCzx+drl9T2+f2Ssd7G1u0dbsXF1e3w9fs2dsfl7ffV4fIocsaApNmowOSMrNyrw+Wbt+AAUryFqNr2AL+0AAADz0lEQVR4nO3ca1+qMACAcZiA5ATMW+a98vT9P+LROkXiNruMLXae/2v1xyOy6QCjCAAAAAAAAAAAAAAAAAAAALBGnPjeiPbkZSJ36/W4qmSQlbIYTTfxyXx72CXBNYpkv4o/mAwDayx7m7hhWoWUWM2afUebcTiJ5UAReDweo1AS5VAZeNyLgXxQhZxrCo/Hou+NsyJ70AXGcS+EnSgifWC8SHxvngXyzlAYhzCeJqmp8FH63r4fE8IUGC+6P9YI3VTxatP9AzFXz/bvCt8b+GNyT2HX5aov3UEVip4xMO3+SBNlxsJp6Xv7fq5amApn3Z/xzQfivAzgW1tUrPSFDwF8SM1zfiDLisUk5KPwREjN5/QpgKnilbhXrmP0uz/bvxPR9jLwEFDgacm7+Ut/c5v53ijLSvHw4WhMB0Xue4usE2U1vOtv03Qy3e+S8PpeCJlVSZKVgcyCAIDfT+SyrI6Ok0+As4+QVbGbHabLxWTRf7qb7YrMa6XIdZpbpX3k2QPzSuyXjV8rk8dd4i1SjG90bs+3SQx1D7yvH5gnt0vlr830ufK06mNYMW2cl8nUm370/laIYmQ4W3covSwaGAob68FZ/1phudOuiLyYDwoPu9FeoSiejX0nE+H+Z4u1QiHNO/DVfOh8hdJWYT42LLx+NHN9XtlSoVxrL8tpGjheILFTqFmvU7txO6RaKZT5Jz+ir9xeiWSl8M9nBpnayunVqzYKh9eniXNTl8vpVvbhFwOP74nDadFG4RdGmbeXdriibqPwG2budqKnQofXQHgqjIfOhlNfhX1nX958FcaZq53ordDZOXRvhVNXX8DtF87TNP3EDLlyNZpaLlwOxkWSJIWYXX20q4vIrRY+jat/S4tCVmPjBWXuDkSLhave2V02ojDeBxAfHK1n2CvcZs1vYhcXQJxZOhpqrBWqvofpr7fSPOE3F84vTgKcXvze9AxHvy9sFY6U40Zleo6jMxmWChfqHWK8n8PRdGGpULe4lBiWqHZdKtzqRg3TkxwtudkpfNbN3tKwSNWpQu0hJQyrVF0q3GgHftPNcV0qXOp/sBdhFBou6jcMpl0qNNxrmlz8XUMnC/fBFw7067uGG40ptITCGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwhqFahS2j8IahWoUto/CGoVqFLaPwlqAhc1/4NHfx2Qq9H7lXhT1dNaNf1HqDc/djt4YrroXa+3rtx1Wb4PWlQfq/zPrWy8PAAAAAAAAAAAAAAAAAAAA4D/0F5lQSZ+5G/qbAAAAAElFTkSuQmCC" width="50px" height="50px"></a>
+           <a href="https://github.com/Anmolgupta2004"> <img src="data:image/png;base64,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" height="50px" width="50px"></a>
+        </div>
+        <div class="button">
+         <a href="https://youtube.com/@anmolgupta2495?si=9e_6FpgiHNA1OCkX">   <button style="background-color:skyblue;border-radius:20px; margin-left: 20px;font-size: 25px; box-shadow:2px 3px gray;">Subscribe</button></a>
+         <a href="https:wa.me/+916398205124">   <button style="background-color:skyblue;border-radius: 20px; margin-left: 20px;font-size: 25px;box-shadow: 2px 3px gray;">Message</button></a>
+        </div>
+
+ </div>
+</body>
+</html>
