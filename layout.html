@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<style>
+.li{
+    display:flex;
+    float:left;
+    margin-left: 40px;
+     width:110px;
+     font-size: 20px;
+   }
+ .front{
+background-image: url("https://cdn.pixabay.com/photo/2016/12/06/01/26/colour-1885352_1280.jpg");
+opacity: 0.9;
+border:1px solid black;
+height: 800px;
+width:100%;
+background-size:cover;
+background-repeat: no-repeat;
+position: fixed;
+}
+ 
+ .img{
+    position: relative;
+    margin:50px;
+    border-radius: 40;
+    margin-left: 900px;
+ } 
+ .anmol{
+    position:relative;
+    margin:-450px;
+    text-align: center;
+    font-size: 80px;
+    margin-right: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-shadow: 5px 10px 15px gray;
+ }
+ .pro{
+    margin:450px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    border-right:4px solid black;
+    animation: typing 5s steps(12) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+ }
+ .search{
+    margin-left: 20px;
+ }
+ @keyframes typing {
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:12ch;
+    }
+    100%{
+        width:0ch;
+    }
+    }
+</style>
+<body>
+    <div class="front">
+    <nav class="line">
+        <div>
+            <ul>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bxs-home'></i><b>Home</b></a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-child'></i><b>Cliends</b></a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-network-chart'></i> <b>Services</b></a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-cog'></i><b> Settings</b></a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-credit-card-front'></i><b>Features</b></a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-meh'></i><b>About us</b> </a></div>
+            <div class="li"><a style="text-decoration: none; color:black" href=""><i class='bx bx-user-voice'></i><b>Contact</b></a></div>
+            </ul>
+            <div class="Search">
+                <input type="text" placeholder="Search here......">
+                <i class='bx bx-search-alt'></i>
+            </div>
+        </div>
+    </nav>
+        <div class="img"><img style="border-radius:70% ;border:2px solid aqua; padding:7px" src="\AnmolDemo.jpg"></div>
+        <div class="anmol">Anmol Gupta</div>
+        <div class="pro">a programmer</div>
+</div>
+
+</body>
+</html>
