@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    .main{
+        height: 100%;
+        width: 100%;
+        background-color: hsla(205, 42%, 69%, 0.699); 
+        display: flex;
+        overflow: hidden;
+    }
+    #part1{
+        height: 100%;
+        width: 26%;
+        }
+    #part2{
+        height: 100%;
+        width: 68%;
+        background-size: cover;
+        background-position: center;
+        animation: img 3s   infinite;
+        background-image: url("/me.jpg");
+    }
+    @keyframes img {
+    0%{
+        width:0%;
+    }
+    50%{
+        width:100%;
+    }
+    100%{
+        width:0;
+    }
+    }
+#part3{
+        height: 100%;
+        width: 6%;
+       }
+    .overlay{
+        height: 100%;
+        width: 100%;
+         display: flex;
+         background-color:hsla(206, 9%, 50%, 0.324); 
+        }
+    .text{
+       position: absolute;
+        width: 500px;
+        left: 10%;
+        top: 60%;
+        transform: translate(0,-50%);
+        }
+   .text>h1{
+        font-size: 60px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 800;
+        text-transform: uppercase;
+        line-height: 50px; 
+        color: white;
+        letter-spacing: 5px;
+        }
+    .typing2{
+      background-color:wheat ;
+        border:4px solid wheat;
+    animation: typing2 5s steps(20) infinite;
+    }
+    .typing3{
+      background-color:wheat ;
+        border:4px solid wheat;
+    animation: typing3 3s steps(8)  infinite;
+    }
+       #small-image{
+        height: 400px;
+        width: 300px;
+        top: 60%;
+        right: 2%;
+        transform: translate(0,-50%);
+        animation: img2 3s infinite;  
+        background-image: url("/me2.jpg");
+        top: 60%;
+        right: 2%;
+        transform: translate(0,-50%);
+        background-size: cover;
+        background-position:center ;
+        position: absolute;
+}
+    @keyframes img2 {
+    0%{
+        width:0px;
+    }
+    50%{
+        width:300px;
+    }
+    100%{
+        width:0px;
+    }
+    }
+    #vertical-text{
+        position: absolute;
+right: -50%;
+    }
+    #vertical-text h1{
+font-size: 80px;
+font-weight: 900;
+color: transparent;
+transform: rotate(90deg);
+transform-origin: 0% 0%;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+-webkit-text-stroke-width: 2px;
+-webkit-text-stroke-color: #fff;
+letter-spacing: 15px;
+text-transform: uppercase;
+animation: text 3s infinite; 
+}
+@keyframes text {
+    0%{
+        color:transparent;
+    }
+    50%{
+        color: beige;
+    }
+    100%{
+      color:transparent;
+    }
+    }
+#nav{
+    position: absolute;
+    width: 250px;
+    left: 5%;
+    top: 5%;
+   display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ #nav>img{
+    height: 60px;
+   animation: typing 5s  infinite;
+    }
+#nav>h5{
+    position: relative;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    left: 40%;
+}
+ @keyframes typing {
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:12ch;
+    }
+    100%{
+        width:0ch;
+    }
+    }
+    @keyframes typing2{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:20ch;
+    }
+    100%{
+        width:0ch;
+    }
+    }
+    @keyframes typing3{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:9ch;
+    }
+    100%{
+        width:0ch;
+    }
+    }
+</style>
+<body>
+    <div class="main">
+        <div id="nav"><img src="https://www.chungiyoo.com/img/faces/smile%2001.svg">
+            <h5>anmol gupta</h5>
+        </div>
+        <div id="part1"></div>
+        <div id="part2">
+            <div class="overlay"></div>
+        </div>
+        <div id="part3"></div>
+        <div class="text">
+            <h1>Hey </h1>
+            <h1 class="typing3">Everyone</h1>
+            <h1 >Anmol gupta</h1>
+            <h1 class="typing2">itx_me_anmolgupta</h1>
+         </div>
+        <div id="small-image">
+            <div class="overlay"></div>
+        </div>
+        <div id="vertical-text">
+            <h1>open to work</h1>
+        </div>
+    </div>
+   </body>
+</html>
