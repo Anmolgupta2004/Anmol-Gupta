@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        height: 100%;
+        width: 100%;
+    }
+    .main{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+    .title{
+        height: 50px;
+        background-color: cadetblue;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        justify-content: center;
+        line-height: 50px;
+    }
+.choices{
+    display: flex;
+    position: relative;
+    left: 250px;
+    top: 100px;
+    column-gap: 140px;
+    width: 1000px;
+    height: 200px;
+
+}
+img{
+    
+    height: 200px;
+     width: 200px;
+ border-radius: 50%;
+ 
+ align-items: center;
+ justify-content: center;
+
+}
+img:hover{
+    cursor: pointer;
+    opacity: 0.7;
+    }
+    .score-board {
+        display: flex;
+        position: relative;
+       column-gap: 160px;
+        width: 400px;
+        top: 200px;
+        left: 550px;
+        text-align: center;
+    }
+    .score{
+        font-size: 30px;
+}
+.msg{
+    position: relative;
+    top: 230px;
+    text-align: center;
+    justify-content: center;
+    
+}
+#msg{
+    margin-top: 10px;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px grey;
+    
+}
+</style>
+<body>
+    <div class="main">
+        <div class="title">Stone Paper Scissors Game</div>
+        <div class="choices">
+            <div class="choice" id="stone" ><img src="https://i.pinimg.com/236x/a8/f3/6f/a8f36fee3e7d247715b997b922a292cc.jpg"></div>
+            <div class="choice" id="paper" ><img src="https://i.pinimg.com/236x/e1/46/a6/e146a6b20adbd9e790d147be927e9cd7.jpg"></div>
+            <div class="choice" id="scissors" ><img src="https://i.pinimg.com/236x/ea/ac/b2/eaacb2da53e165ef674fd01311e2ce0a.jpg"></div>     
+        </div>
+        <div class="score-board">
+            <div class="score">
+                <p id="me">0</p>
+                <p>You</p>
+            </div>
+            <div class="score">
+                <p id="computer">0</p>
+                <p>Computer</p>
+            </div>
+        </div>
+        <div class="msg">
+            <button id="msg">Play your Move</button>
+        </div>
+    </div>
+</body>
+<script src="newgame.js"></script>
+</html>
